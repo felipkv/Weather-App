@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="location_txt">Location</string>
+    <string name="updated_at_txt">Updated at</string>
+    <string name="status_txt">Clear sky</string>
+    <string name="temperature_txt">16°C</string>
+    <string name="min_temp_txt">Min temp: 24°C</string>
+    <string name="max_temp_txt">Max temp: 24°C</string>
+    <string name="sunrise_txt">Sunrise</string>
+    <string name="sunrise_hour_txt">5:30 am</string>
+    <string name="sunset_txt">Sunset</string>
+    <string name="sunset_hour_txt">5:30 am</string>
+    <string name="wind_txt">Wind</string>
+    <string name="wind_spd_txt">0</string>
+    <string name="pressure_txt">Pressure</string>
+    <string name="pressure_num_txt">0</string>
+    <string name="humidity_txt">Humidity</string>
+    <string name="humidity_num_txt">0</string>
+    <string name="humidity_icon_desc">Air Humidity Icon</string>
+    <string name="pressure_icon_desc">Air Pressure Icon</string>
+    <string name="wind_icon_desc">Wind Speed Icon</string>
+    <string name="sunset_icon_desc">Time of Sunset Icon</string>
+    <string name="sunrise_icon_desc">Time of Sunrise Icon</string>
+</resources>
