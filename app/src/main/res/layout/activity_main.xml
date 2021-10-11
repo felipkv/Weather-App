@@ -54,7 +54,7 @@
 
 
     <TextView
-        android:id="@+id/temp_min"
+        android:id="@+id/temp_min_max"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/min_temp_txt"
@@ -62,11 +62,11 @@
         app:layout_constraintTop_toBottomOf="@id/temperature" />
 
     <TextView
-        android:id="@+id/temp_max"
+        android:id="@+id/feels_like"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/max_temp_txt"
-        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintStart_toEndOf="@id/guideline6"
         app:layout_constraintTop_toBottomOf="@id/temperature" />
 
     <Space
@@ -354,7 +354,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="227dp" />
+        app:layout_constraintGuide_percent="0.52" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
@@ -368,7 +368,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="227dp" />
+        app:layout_constraintGuide_percent="0.43" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline10"

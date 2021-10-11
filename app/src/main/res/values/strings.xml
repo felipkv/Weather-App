@@ -4,8 +4,8 @@
     <string name="updated_at_txt">Updated at</string>
     <string name="status_txt">Clear sky</string>
     <string name="temperature_txt">16°C</string>
-    <string name="min_temp_txt">Min temp: 24°C</string>
-    <string name="max_temp_txt">Max temp: 24°C</string>
+    <string name="min_temp_txt">16°C / 18°C</string>
+    <string name="max_temp_txt">Feels like: 24°C</string>
     <string name="sunrise_txt">Sunrise</string>
     <string name="sunrise_hour_txt">5:30 am</string>
     <string name="sunset_txt">Sunset</string>

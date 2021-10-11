@@ -57,10 +57,11 @@ class MainActivity : AppCompatActivity() {
                 val updatedAtText = "Updated at: " + SimpleDateFormat("dd/MM/yyyy hh:mm a", Locale.ENGLISH)
                         .format(Date(updatedAt * 1000))
                 val temp = (main.getInt("temp")-273).toString()+"°C"
-                val tempMin = "Min temp: " + (main.getInt("temp_min")-273).toString() + "°C"
-                val tempMax = "Max temp: " + (main.getInt("temp_max")-273).toString() + "°C"
-                val pressure = main.getString("pressure")
-                val humidity = main.getString("humidity")
+                val tempMin = (main.getInt("temp_min")-273).toString() + "°C"
+                val tempMax = (main.getInt("temp_max")-273).toString() + "°C"
+                val feelsLike = "Feels like " + (main.getInt("feels_like")-273).toString() + "°C"
+                val pressure = main.getString("pressure") + " hPa"
+                val humidity = main.getString("humidity") + " %"
                 val sunrise: Long = sys.getLong("sunrise")
                 val sunset: Long = sys.getLong("sunset")
                 val windSpeed = (wind.getDouble("speed")*3.6)
@@ -72,8 +73,8 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.updated_at).text = updatedAtText
                 findViewById<TextView>(R.id.status).text = weatherDescription.capitalize()
                 findViewById<TextView>(R.id.temperature).text = temp
-                findViewById<TextView>(R.id.temp_min).text = tempMin
-                findViewById<TextView>(R.id.temp_max).text = tempMax
+                findViewById<TextView>(R.id.temp_min_max).text = "${tempMin} / ${tempMax}"
+                findViewById<TextView>(R.id.feels_like).text = feelsLike
                 findViewById<TextView>(R.id.box_sunrise_hour).text = SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunrise * 1000))
                 findViewById<TextView>(R.id.box_sunset_hour).text = SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(Date(sunset * 1000))
                 findViewById<TextView>(R.id.box_wind_hour).text = windSpeedFormat
